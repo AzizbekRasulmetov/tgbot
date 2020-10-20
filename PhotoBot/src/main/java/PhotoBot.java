@@ -128,23 +128,23 @@ public class PhotoBot extends TelegramLongPollingBot {
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
-        }else if(update.hasMessage() && update.getMessage().hasPhoto()){
-            long chat_id = update.getMessage().getChatId();
-            List<PhotoSize> photos = update.getMessage().getPhoto();
-            String f_id = photos.stream()
-                    .sorted(Comparator.comparing(PhotoSize::getFileSize).reversed())
-                    .findFirst()
-                    .orElse(null).getFileId();
-            SendPhoto msg = new SendPhoto()
-                    .setChatId(chat_id)
-                    .setPhoto(f_id)
-                    .setCaption("Bu nimasi yana!");
-            try{
-                sendPhoto(msg);
-            }catch (TelegramApiException e){
-                e.printStackTrace();
-            }
-        }
+        }//       else if(update.hasMessage() && update.getMessage().hasPhoto()){
+//            long chat_id = update.getMessage().getChatId();
+//            List<PhotoSize> photos = update.getMessage().getPhoto();
+//            String f_id = photos.stream()
+//                    .sorted(Comparator.comparing(PhotoSize::getFileSize).reversed())
+//                    .findFirst()
+//                    .orElse(null).getFileId();
+//            SendPhoto msg = new SendPhoto()
+//                    .setChatId(chat_id)
+//                    .setPhoto(f_id)
+//                    .setCaption("Bu nimasi yana!");
+//            try{
+//                sendPhoto(msg);
+//            }catch (TelegramApiException e){
+//                e.printStackTrace();
+//            }
+//        }
         System.out.println("Bot is run successfully");
     }
 
