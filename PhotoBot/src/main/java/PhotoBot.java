@@ -37,13 +37,13 @@ public class PhotoBot extends TelegramLongPollingBot {
                 "fransuz", "ispan", "uzbek tilini", "uzbekcha", "uzbekcha faqat", "uzbek tilini faqat",
                 "uzbek tilini"};
 
-        List<String> sukinish = new ArrayList<>(Arrays.asList(sukishlar));
-        List<String> ozinchilist = new ArrayList<>(Arrays.asList(ozinchi));
-        List<String> nmalist = new ArrayList<>(Arrays.asList(nma));
-        List<String> blmadmlist = new ArrayList<>(Arrays.asList(blmadim));
-        List<String> urganlist = new ArrayList<>(Arrays.asList(urgan)) ;
-        List<String> maqtashlist = new ArrayList<>(Arrays.asList(mahtash));
-        List<String > tillarlist = new ArrayList<>(Arrays.asList(tillar));
+        List<String> sukinish = new ArrayList<String>(Arrays.asList(sukishlar));
+        List<String> ozinchilist = new ArrayList<String>(Arrays.asList(ozinchi));
+        List<String> nmalist = new ArrayList<String>(Arrays.asList(nma));
+        List<String> blmadmlist = new ArrayList<String>(Arrays.asList(blmadim));
+        List<String> urganlist = new ArrayList<String>(Arrays.asList(urgan)) ;
+        List<String> maqtashlist = new ArrayList<String>(Arrays.asList(mahtash));
+        List<String > tillarlist = new ArrayList<String>(Arrays.asList(tillar));
 
 
         if(update.hasMessage() && update.getMessage().hasText()){
