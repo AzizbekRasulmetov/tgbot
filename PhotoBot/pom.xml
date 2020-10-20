@@ -6,33 +6,6 @@
     <groupId>org.example</groupId>
     <artifactId>PhotoBot</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>7</source>
-                    <target>7</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
-    <dependencies>
-     <dependency>
-        <groupId>com.vdurmont</groupId>
-        <artifactId>emoji-java</artifactId>
-        <version>3.1.3</version>
-     </dependency>
-    </dependencies>
 </project>
 
